@@ -1,0 +1,317 @@
+# Medium Talk: 100 Conversation Starter Questions
+
+## Surface Level (40 Questions)
+Getting to know each other's interests, preferences, and surface-level experiences
+
+- Picture yourself at age 8 - what would completely blow your mind about your life now?
+- Notice the last thing that made you stop and pay attention - why did it catch you?
+- Imagine you could give your past self one piece of practical advice - what would it be?
+- Consider your daily habits - which one would be hardest to give up?
+- Recall a moment when you felt like you were in exactly the right place at the right time.
+- Envision your perfect creative project with unlimited resources - describe it.
+- Remember the first time you felt really independent - paint that picture for me.
+- Think about your morning self versus your evening self - how are they different?
+- Picture a conversation that changed your perspective on something small but important.
+- Reflect on your relationship with food - is there a dish that tells your story?
+- Consider the apps on your phone - which one would surprise people the most?
+- Imagine you're writing your autobiography - what would be the most interesting chapter title?
+- Think of a stranger who made an impression on you - why do you still remember them?
+- Picture your dream dinner party - who's there and what are you discussing?
+- Remember a time you felt like you were living in a movie scene.
+- Consider your wardrobe - which piece makes you feel most like yourself?
+- Think about your city or town - where would you take a visitor first?
+- Imagine you could master any craft with your hands - what would you choose?
+- Recall the most beautiful thing you've seen in nature recently.
+- Picture yourself explaining your job to a curious 10-year-old - how would you do it?
+- Think about your bookshelf (real or imaginary) - which book represents who you're becoming?
+- Consider your energy throughout the day - when do you feel most alive?
+- Remember a time when you had to wing it completely and it worked out.
+- Picture your ideal way to spend a unexpected free afternoon.
+- Think about the music you listen to when no one else is around.
+- Imagine you could have a 10-minute conversation with any current world leader - who and about what?
+- Recall a moment when you felt like you were exactly where you belonged.
+- Consider your relationship with weather - which type matches your personality?
+- Think of something you own that has way more sentimental value than monetary value.
+- Picture the most comfortable space you've ever been in - what made it special?
+- Remember a time when you helped someone without them asking.
+- Consider your relationship with time - are you always early, late, or right on time?
+- Think about your hometown - what do you miss most when you're away?
+- Imagine you could revive any cancelled TV show - which one deserves another chance?
+- Recall a compliment that took you completely by surprise.
+- Picture your 15-year-old self meeting you now - what would they think?
+- Consider the last time you got completely absorbed in something - what was it?
+- Think about your social battery - how do you know when it needs recharging?
+- Remember a moment when you felt genuinely impressed by someone else's talent.
+- Picture yourself learning something completely new - what draws your curiosity?
+- Tell me about a time you laughed so hard you cried.
+- Describe your perfect Saturday morning without using any technology.
+- Think of the last thing that made you feel genuinely excited - share that story.
+- Name three things you're secretly really good at.
+- Where would you go right now for a perfect 20-minute break from everything?
+- How do you know when you've found a really good friend?
+- Finish this sentence: "I wish more people knew that..."
+- Remember your favorite teacher - why did they stand out to you?
+- Share a family tradition that might seem weird to outsiders.
+- Picture your ideal creative workspace - walk me through it.
+- Who taught you something important without realizing it?
+- Choose any age you've been and tell me why that year was significant.
+- Describe the best gift you've ever given someone else.
+- Think about your daily routine - which part brings you the most joy?
+- Name a movie that everyone loves but you just can't get into.
+- How would you spend $100 to make someone else's day better?
+- Tell me about a place that feels magical to you.
+- Complete this thought: "People would be surprised to know I..."
+- Share something you've learned from watching people in public places.
+- Describe a sound that instantly makes you happy.
+- When you were a kid, what did you want to be when you grew up?
+- Name something that's legal but feels like it should be against the rules.
+- Think of your favorite season - why does it resonate with you?
+- Tell me about a time you felt like a detective solving a mystery.
+- How do you celebrate small wins in your life?
+- Share a random skill you picked up and never expected to use.
+- Describe the most interesting person you've met in the last six months.
+- Think about your living space - which object tells the best story?
+- Where do you do your best thinking?
+- Tell me about a time you tried something new and surprised yourself.
+- Name an actor who you think could play you in a movie about your life.
+- How has your taste in music changed since you were younger?
+- Share something that always smells like home to you.
+- Describe a time when technology completely failed you at the worst moment.
+- Think of your closest friend - how did you first meet them?
+- Tell me about something you collect, either intentionally or by accident.
+- When do you feel most like an expert at something?
+- Share a compliment you received that you still think about.
+- Describe your relationship with mornings - are you friends or enemies?
+- Name something you do that makes you feel immediately more confident.
+- What's something you've learned recently that genuinely surprised you?
+- If you could have dinner with any fictional character, who would it be and why?
+- What's a hobby or interest you have that most people wouldn't guess about you?
+- What's the best piece of advice you've ever received?
+- If you could instantly become an expert in any skill, what would you choose?
+- What's a place you've never been but feel drawn to visit?
+- What's something that always makes you laugh, no matter your mood?
+- What's a food you thought you hated but ended up loving?
+- If you could have any superpower for just one day, what would you do with it?
+- What's the most interesting documentary or podcast you've consumed lately?
+- What's a small thing that happened today that made you smile?
+- If you could bring back any fashion trend, what would it be?
+- What's a song that instantly transports you to a specific memory?
+- What's something you're looking forward to in the next few months?
+- If you could have coffee with anyone from history, who would you choose?
+- What's a skill you wish schools taught that they don't?
+- What's your go-to way to unwind after a long day?
+- If you could live in any decade, which would you choose and why?
+- What's something you've always wanted to try but haven't yet?
+- What's the weirdest compliment you've ever received?
+- If you could eliminate one chore from your life forever, what would it be?
+- What's a book that changed how you think about something?
+- What's your favorite way to spend a rainy day?
+- If you could have a conversation with your pet (or any animal), what would you ask?
+- What's something that's popular now that you just don't understand?
+- What's a tradition you'd like to start with friends or family?
+- If you could master any instrument overnight, which would you choose?
+- What's the most beautiful place you've ever seen?
+- What's a conspiracy theory you find fascinating (even if you don't believe it)?
+- If you could have any job for just one week, what would you try?
+- What's something that makes you feel instantly nostalgic?
+- What's the most interesting conversation you've ever had with a stranger?
+- If you could rename yourself, what name would you choose?
+- What's a movie you can watch over and over without getting tired of it?
+- What's something you believed as a child that you later found out wasn't true?
+- If you could have any question answered with absolute certainty, what would you ask?
+- What's a random act of kindness you witnessed that stuck with you?
+- What's something you do that you think everyone should try?
+- If you could create a holiday, what would it celebrate?
+- What's a story someone has told you that you'll never forget?
+
+
+## Sub-Surface Level (35 Questions)
+Exploring values, perspectives, and more meaningful experiences
+
+- Examine your relationship with perfectionism - how has it served and hindered you?
+- Consider the person you were five years ago - what would they need to hear from you now?
+- Reflect on your biggest misconception about adulthood when you were younger.
+- Think about a time when your intuition saved you from making a big mistake.
+- Examine how you handle being the center of attention - comfort or discomfort?
+- Consider your relationship with money - what messages did you inherit about it?
+- Reflect on a time when you had to choose between loyalty and honesty.
+- Think about your capacity for empathy - when do you find it most challenging?
+- Examine a belief system you've outgrown - what led to that evolution?
+- Consider how you process difficult emotions - do you need space or connection?
+- Reflect on your relationship with authority - how has it shaped your choices?
+- Think about a time when you stood up for someone who couldn't advocate for themselves.
+- Examine your comfort level with uncertainty - are you learning to embrace it?
+- Consider how you handle compliments versus criticism - which affects you more?
+- Reflect on your relationship with time - do you see it as friend or enemy?
+- Think about a moment when you realized you were stronger than you thought.
+- Examine your patterns in relationships - what keeps showing up?
+- Consider how you define personal success versus societal expectations.
+- Reflect on a time when you had to choose between being liked and being authentic.
+- Think about your relationship with control - where do you struggle to let go?
+- Examine how you've learned to set boundaries - what was your biggest lesson?
+- Consider the role that humor plays in how you cope with difficulty.
+- Reflect on a time when you had to trust the process even when you couldn't see the outcome.
+- Think about your relationship with solitude - is it restorative or challenging?
+- Examine how you handle transitions and endings in your life.
+- Consider a moment when you felt most disconnected from yourself - what brought you back?
+- Reflect on how you've learned to handle disappointment as you've gotten older.
+- Think about your relationship with risk - when are you willing to take the leap?
+- Examine how you know when to push forward versus when to rest.
+- Consider what unconditional love looks like in your daily life.
+- Reflect on a time when you had to separate your worth from your performance.
+- Think about how you maintain your sense of self within close relationships.
+- Examine your relationship with failure - has it become a teacher?
+- Consider how you honor both your individual needs and your connections to others.
+- Reflect on what you've learned about the difference between reacting and responding.
+- How has your definition of courage evolved as you've gotten older?
+- Describe a moment when you realized you were becoming more like your parents.
+- Tell me about a time when doing the right thing was really difficult.
+- Think about your personal growth - where do you see the biggest changes?
+- Share something you believe that goes against popular opinion.
+- When have you had to choose between what's safe and what's meaningful?
+- How do you handle being wrong about something important?
+- Describe a relationship that taught you something valuable about yourself.
+- Think of a time you felt truly understood - why was that moment special?
+- Tell me about an assumption people make about you that's completely wrong.
+- How do you decide when to trust someone new?
+- Share a moment when you had to advocate for yourself.
+- Describe your relationship with change - do you embrace it or resist it?
+- Think about your values - which one took you the longest to develop?
+- Tell me about a time when you had to set a difficult boundary.
+- How do you handle situations where you can't control the outcome?
+- Share something you've stopped doing because it wasn't serving you anymore.
+- Describe a moment when you felt genuinely proud of someone else.
+- Think about your communication style - how has it evolved?
+- Tell me about a time when you chose vulnerability over self-protection.
+- How do you define emotional maturity?
+- Share a lesson you learned the hard way that you're grateful for now.
+- Describe what loyalty means to you in your relationships.
+- Think about your biggest fears - how do they influence your decisions?
+- Tell me about a time when you surprised yourself with your own strength.
+- How do you know when you're truly happy versus just content?
+- Share something you've had to practice forgiving, either in yourself or others.
+- Describe a moment when you felt deeply connected to your purpose.
+- Think about conflict in your life - how has your approach changed?
+- Tell me about a time when you chose growth over comfort.
+- How do you maintain hope during difficult periods?
+- Share something about yourself that you're still figuring out.
+- Describe a moment when you felt most aligned with your authentic self.
+- Think about wisdom - where do you turn when you need guidance?
+- Tell me about a time when you had to let someone down gently.
+- What's a belief you held strongly that you've since changed your mind about?
+- When do you feel most like yourself?
+- What's something you've done that you initially thought was impossible?
+- What's a mistake that ended up teaching you something valuable?
+- How do you think your friends would describe you to someone who's never met you?
+- What's something you've had to unlearn as you've gotten older?
+- What does a meaningful friendship look like to you?
+- When was the last time you changed your opinion about something important?
+- What's a challenge you're currently working through?
+- What's something you wish people understood better about the world?
+- How do you handle situations when you feel misunderstood?
+- What's a moment when you felt truly proud of yourself?
+- What's something you think society gets wrong?
+- When do you feel most connected to others?
+- What's a value that guides most of your decisions?
+- How has your relationship with failure changed over time?
+- What's something you've learned about yourself in the past year?
+- When do you feel most creative or inspired?
+- What's a time when someone's perspective completely shifted your thinking?
+- How do you define success for yourself?
+- What's something you wish you could tell your younger self?
+- When was a time you had to stand up for something you believed in?
+- What's a pattern in your life that you've started to notice?
+- How do you deal with uncertainty in your life?
+- What's something that gives your life meaning?
+- When do you feel most at peace?
+- What's a quality you admire in others that you want to develop in yourself?
+- How has your definition of happiness evolved over time?
+- What's something you've had to let go of that was difficult?
+- When was a time you felt truly understood by someone?
+- What's a way you've grown that you're proud of?
+- How do you know when you're living authentically?
+- What's something you wish more people would talk openly about?
+- When was a time you had to trust your intuition?
+- What's a lesson you've learned that you wish you could share with everyone?
+
+## Core Level (25 Questions)
+Sharing vulnerabilities and deeper emotional experiences
+
+- Explore the moment you realized you were worthy of love exactly as you are.
+- Share what it feels like when you're holding back tears and someone notices.
+- Reflect on a time when someone's presence was medicine for your spirit.
+- Consider the heaviest thing you carry that no one knows about.
+- Think about what your younger self needed to hear that no one said.
+- Examine the part of your heart that's still tender and how you protect it.
+- Share a moment when you felt your soul recognizing another soul.
+- Reflect on what you do when you feel like you're falling apart inside.
+- Consider the last time you felt truly held by someone's love.
+- Think about a wound that's become a source of wisdom or compassion.
+- Examine what it means to you to feel emotionally safe with another person.
+- Share something about your inner world that you rarely let others see.
+- Reflect on a moment when you felt your heart crack open in the best way.
+- Consider what you most need people to understand about your struggles.
+- Think about a time when grief and gratitude lived in your heart simultaneously.
+- Examine what you're still learning to forgive yourself for.
+- Share how you know when someone has truly seen your soul.
+- Reflect on what you hope your presence brings to other people's lives.
+- Consider the most healing thing anyone has ever said to you.
+- Think about what you wish you could tell everyone who's ever felt alone.
+- Examine the part of your story that you're most afraid to share.
+- Share what love feels like when it's unconditional and safe.
+- Reflect on how you want to be remembered by the people whose lives you've touched.
+- Consider what you most want to heal in the world through your own healing.
+- Think about the legacy you want to leave in the hearts of people you've loved.
+- Share a moment when you felt completely broken but somehow found your way back.
+- Describe what it feels like when someone truly sees you for who you are.
+- Think about your heart - what has it taught you about resilience?
+- Tell me about a time when you had to forgive someone who really hurt you.
+- How do you comfort yourself when you're going through something difficult?
+- Share something you've never said out loud but carry with you.
+- Describe a moment when you felt the deepest love you've ever experienced.
+- Think about your scars (physical or emotional) - which one has the most important story?
+- Tell me about a time when you felt most alone in a crowded room.
+- How do you hold space for your own pain while still showing up for others?
+- Share a memory that still brings tears to your eyes.
+- Describe what you need to feel truly safe with another person.
+- Think about your biggest regret - how has it shaped who you are?
+- Tell me about someone you've lost and how they still influence you.
+- How do you know when you're ready to be vulnerable with someone?
+- Share a fear that you've never told anyone about.
+- Describe a moment when you felt your spirit break and heal simultaneously.
+- Think about unconditional love - when have you experienced it?
+- Tell me about a part of your story that you're still writing.
+- How do you hold onto hope when everything feels uncertain?
+- Share something you want to be remembered for.
+- Describe what home feels like to you, beyond any physical place.
+- Think about your deepest wound - what is it teaching you?
+- Tell me about a moment when you felt completely at peace with who you are.
+- Share what you most need people to understand about your heart.
+- What's something you've forgiven yourself for?
+- When was a time you felt truly seen and accepted for who you are?
+- What's a fear you've overcome, and how did you do it?
+- When do you feel most vulnerable, and how do you handle it?
+- What's something you've never told anyone but want to share?
+- When was a time you felt completely overwhelmed, and what got you through it?
+- What's a part of your story that has shaped who you are today?
+- When was a time you felt most grateful for your life?
+- What's something you're still healing from?
+- When have you felt most disappointed in yourself, and what did you learn?
+- What's a way someone has loved or supported you that meant everything?
+- When was a time you felt truly brave?
+- What's something you're afraid to hope for?
+- When have you felt most alone, and how did you find your way back to connection?
+- What's a moment when you felt your heart break and heal at the same time?
+- What's something you wish you could say to someone but haven't?
+- When was a time you felt truly transformed by an experience?
+- What's a part of yourself you've learned to love that you once didn't?
+- When have you felt most human and imperfect, yet still worthy of love?
+- What's something you hope people remember about you?
+- When was a time you felt deeply connected to something bigger than yourself?
+- What's a moment of joy that still fills you with warmth when you think about it?
+- What's something you're learning to accept about life?
+- When have you felt most at home in your own skin?
+- What's something you want to create or leave behind in this world?
+
+
+These questions are designed to help people move past small talk and into meaningful connection. Start with surface level questions and gradually move deeper as comfort and trust build naturally in the conversation.
