@@ -3,6 +3,13 @@ import { ref, onMounted } from 'vue';
 import questions from '@/questions.json';
 import instances from '@/instances.json';
 
+const getInstanceStyle = (instance) => {
+  const { background, text, chipBackground, chipText } = instance.colorScheme;
+  return {
+    backgroundImage: `linear-gradient(to right, ${background}, ${text}, ${chipBackground}, ${chipText})`,
+  };
+};
+
 const randomQuestion = ref(null);
 
 onMounted(() => {
@@ -24,7 +31,7 @@ onMounted(() => {
       <h2>Instances</h2>
       <ul>
         <li v-for="instance in instances" :key="instance.path">
-          <router-link :to="instance.path">{{ instance.name }}</router-link>
+          <router-link :to="instance.path" class="instance-link" :style="getInstanceStyle(instance)">{{ instance.name }}</router-link>
         </li>
       </ul>
     </div>
@@ -46,9 +53,22 @@ onMounted(() => {
 .instance-list ul {
   list-style: none;
   padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
 }
-.instance-list li {
-  margin: 0.5rem 0;
+.instance-link {
+  display: block;
+  padding: 1rem 1.5rem;
+  border-radius: 0.5rem;
+  color: white;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+  font-weight: bold;
+  text-align: center;
+  transition: transform 0.2s ease;
+}
+.instance-link:hover {
+  transform: scale(1.05);
 }
 .attribution {
     margin-top: 4rem;
