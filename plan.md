@@ -9,9 +9,9 @@ This plan outlines the development tasks for the Medium Talk application, based 
     - [ ] Integrate Vue Router for routing.
     - [ ] Integrate Pinia for state management.
 - [ ] **Data Structure for Questions:**
-    - [ ] Define a data structure for questions (e.g., in a JSON file or directly in a Pinia store).
+    - [ ] Define a data structure for questions (e.g., in a JSON file).
     - [ ] Each question should have properties for `text`, `level` ('Surface', 'Sub-Surface', 'Core'), and `type` ('1:1' or 'group').
-    - [ ] Create a script or process to parse `questions.md` and populate the data structure.
+    - [ ] Create a script or process to parse `questions.md` and populate the data structure. The resulting question object should have fields `text`, `level`, and `type`.
 - [ ] **Component Creation:**
     - [ ] `QuestionDisplay.vue`: Component to display a single question.
     - [ ] `LevelIndicator.vue`: Text chip for the question level (top right).
