@@ -1,0 +1,15 @@
+<svg width="64" height="64" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+  <!-- Speech bubble with rounded corners -->
+  <path d="M8 10 C8 6, 12 2, 16 2 L48 2 C52 2, 56 6, 56 10 L56 34 C56 38, 52 42, 48 42 L24 42 L12 52 L12 42 C8 42, 8 38, 8 34 Z" 
+        fill="#2563eb" 
+        stroke="none"/>
+  
+  <!-- White M letter -->
+  <text x="32" y="24" 
+        font-family="Arial, sans-serif" 
+        font-size="24" 
+        font-weight="bold" 
+        fill="white" 
+        text-anchor="middle" 
+        dominant-baseline="central">M</text>
+</svg>
