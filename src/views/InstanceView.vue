@@ -1,5 +1,6 @@
 <script setup>
 import { ref, computed, onMounted, watch } from 'vue';
+import { useDrag } from '@vueuse/gesture';
 import { useRoute } from 'vue-router';
 import questions from '@/questions.json';
 import instances from '@/instances.json';
@@ -21,14 +22,45 @@ const setInstance = () => {
   }
 };
 
-const getRandomQuestion = () => {
-  const randomIndex = Math.floor(Math.random() * questions.length);
-  currentQuestion.value = questions[randomIndex];
+const currentLevel = ref('Surface');
+
+const questionsByLevel = computed(() => {
+    return questions.filter(q => q.level === currentLevel.value)
+});
+
+const getRandomQuestion = (level = currentLevel.value) => {
+    currentLevel.value = level;
+    const levelQuestions = questions.filter(q => q.level === level);
+    const randomIndex = Math.floor(Math.random() * levelQuestions.length);
+    currentQuestion.value = levelQuestions[randomIndex];
 };
+
+const levels = ['Surface', 'Sub-Surface', 'Core'];
+
+const handleSwipe = ({ swipe: [sx, sy] }) => {
+    if (sx !== 0) { // swipe left or right
+        getRandomQuestion();
+    } else if (sy === -1) { // swipe up (previous level)
+        const currentIndex = levels.indexOf(currentLevel.value);
+        const prevIndex = (currentIndex - 1 + levels.length) % levels.length;
+        getRandomQuestion(levels[prevIndex]);
+    } else if (sy === 1) { // swipe down (next level)
+        const currentIndex = levels.indexOf(currentLevel.value);
+        const nextIndex = (currentIndex + 1) % levels.length;
+        getRandomQuestion(levels[nextIndex]);
+    }
+};
+
+const el = ref(null);
+useDrag(handleSwipe, { 
+    target: el, 
+    axis: 'lock',
+    filterTaps: true
+});
 
 onMounted(() => {
   setInstance();
-  getRandomQuestion();
+  getRandomQuestion('Surface');
 });
 
 watch(instancePath, () => {
@@ -47,7 +79,7 @@ const chipStyle = computed(() => {
 </script>
 
 <template>
-  <div v-if="currentInstance && currentQuestion" class="instance-view">
+  <div v-if="currentInstance && currentQuestion" class="instance-view" ref="el">
     <LevelIndicator :level="currentQuestion.level" :style="chipStyle" />
     <TypeIndicator :type="currentQuestion.type" :style="chipStyle" />
     <QuestionDisplay :question="currentQuestion" />
