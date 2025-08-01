@@ -1,0 +1,22 @@
+[
+  {
+    "name": "Baltimore",
+    "path": "/baltimore",
+    "colorScheme": {
+      "background": "#FCBC45",
+      "text": "#000000",
+      "chipBackground": "#C51E30",
+      "chipText": "#FFFFFF"
+    }
+  },
+  {
+    "name": "Philadelphia",
+    "path": "/philadelphia",
+    "colorScheme": {
+      "background": "#004890",
+      "text": "#FFFFFF",
+      "chipBackground": "#FFC600",
+      "chipText": "#000000"
+    }
+  }
+]
