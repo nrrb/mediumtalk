@@ -26,7 +26,8 @@ defineProps({
   transition: transform 0.3s ease-in-out;
 }
 p {
-    font-size: 1.5rem;
+    font-family: 'Kaph', sans-serif;
+    font-size: 2rem;
     line-height: 1.6;
 }
 
