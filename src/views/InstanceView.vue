@@ -1,5 +1,5 @@
 <script setup>
-import { ref, computed, onMounted, watch } from 'vue';
+import { ref, computed, onMounted, onUnmounted, watch } from 'vue';
 import { useDrag } from '@vueuse/gesture';
 import { useRoute } from 'vue-router';
 import questions from '@/questions.json';
@@ -37,17 +37,24 @@ const getRandomQuestion = (level = currentLevel.value) => {
 
 const levels = ['Surface', 'Sub-Surface', 'Core'];
 
+const navigateLevel = (direction) => {
+    const currentIndex = levels.indexOf(currentLevel.value);
+    if (direction === 'up') {
+        const prevIndex = (currentIndex - 1 + levels.length) % levels.length;
+        getRandomQuestion(levels[prevIndex]);
+    } else if (direction === 'down') {
+        const nextIndex = (currentIndex + 1) % levels.length;
+        getRandomQuestion(levels[nextIndex]);
+    }
+};
+
 const handleSwipe = ({ swipe: [sx, sy] }) => {
     if (sx !== 0) { // swipe left or right
         getRandomQuestion();
-    } else if (sy === -1) { // swipe up (previous level)
-        const currentIndex = levels.indexOf(currentLevel.value);
-        const prevIndex = (currentIndex - 1 + levels.length) % levels.length;
-        getRandomQuestion(levels[prevIndex]);
-    } else if (sy === 1) { // swipe down (next level)
-        const currentIndex = levels.indexOf(currentLevel.value);
-        const nextIndex = (currentIndex + 1) % levels.length;
-        getRandomQuestion(levels[nextIndex]);
+    } else if (sy === -1) { // swipe up
+        navigateLevel('up');
+    } else if (sy === 1) { // swipe down
+        navigateLevel('down');
     }
 };
 
@@ -58,9 +65,29 @@ useDrag(handleSwipe, {
     filterTaps: true
 });
 
+const handleKeyPress = (e) => {
+    switch (e.key) {
+        case 'ArrowUp':
+            navigateLevel('up');
+            break;
+        case 'ArrowDown':
+            navigateLevel('down');
+            break;
+        case 'ArrowLeft':
+        case 'ArrowRight':
+            getRandomQuestion();
+            break;
+    }
+};
+
 onMounted(() => {
   setInstance();
   getRandomQuestion('Surface');
+  window.addEventListener('keydown', handleKeyPress);
+});
+
+onUnmounted(() => {
+    window.removeEventListener('keydown', handleKeyPress);
 });
 
 watch(instancePath, () => {
