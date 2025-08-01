@@ -15,6 +15,7 @@ const randomQuestion = ref(null);
 onMounted(() => {
   const randomIndex = Math.floor(Math.random() * questions.length);
   randomQuestion.value = questions[randomIndex];
+  document.body.style.backgroundColor = '#FFFFFF';
 });
 </script>
 
@@ -29,7 +30,7 @@ onMounted(() => {
     </div>
     <div class="instance-list">
       <h2>Instances</h2>
-      <ul>
+      <ul class="instance-list">
         <li v-for="instance in instances" :key="instance.path">
           <router-link :to="instance.path" class="instance-link" :style="getInstanceStyle(instance)">{{ instance.name }}</router-link>
         </li>
@@ -50,11 +51,15 @@ onMounted(() => {
     margin: 2rem 0;
     font-style: italic;
 }
+.instance-list {
+    text-align: center;
+}
 .instance-list ul {
   list-style: none;
   padding: 0;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 1rem;
 }
 .instance-link {

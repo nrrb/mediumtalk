@@ -7,6 +7,7 @@ import instances from '@/instances.json';
 import QuestionDisplay from '@/components/QuestionDisplay.vue';
 import LevelIndicator from '@/components/LevelIndicator.vue';
 import TypeIndicator from '@/components/TypeIndicator.vue';
+import HomeIcon from '@/assets/home.svg';
 
 const route = useRoute();
 const currentQuestion = ref(null);
@@ -106,6 +107,9 @@ const chipStyle = computed(() => {
     <LevelIndicator :level="currentQuestion.level" :style="chipStyle" />
     <TypeIndicator :type="currentQuestion.type" :style="chipStyle" />
     <QuestionDisplay :question="currentQuestion" />
+    <router-link to="/" class="home-link">
+      <img :src="HomeIcon" alt="Home" class="home-icon" />
+    </router-link>
   </div>
 </template>
 
@@ -119,5 +123,29 @@ const chipStyle = computed(() => {
   width: 100vw;
   position: relative;
   touch-action: none; /* Prevent default browser touch actions */
+}
+
+.home-link {
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 0.5rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.2s ease;
+}
+
+.home-link:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.home-icon {
+  width: 2em;
+  height: 2em;
+  position: fixed;
+  bottom: 5px;
 }
 </style>
