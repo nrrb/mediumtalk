@@ -1,6 +1,6 @@
 <script setup>
 import { ref, computed, onMounted, onUnmounted, watch } from 'vue';
-import { useDrag } from '@vueuse/gesture';
+import { useSwipe } from '@vueuse/core';
 import { useRoute } from 'vue-router';
 import questions from '@/questions.json';
 import instances from '@/instances.json';
@@ -48,21 +48,17 @@ const navigateLevel = (direction) => {
     }
 };
 
-const handleSwipe = ({ swipe: [sx, sy] }) => {
-    if (sx !== 0) { // swipe left or right
-        getRandomQuestion();
-    } else if (sy === -1) { // swipe up
-        navigateLevel('up');
-    } else if (sy === 1) { // swipe down
-        navigateLevel('down');
-    }
-};
-
 const el = ref(null);
-useDrag(handleSwipe, { 
-    target: el, 
-    axis: 'lock',
-    filterTaps: true
+const { isSwiping } = useSwipe(el, {
+  onSwipeEnd: (e, direction) => {
+    if (direction === 'left' || direction === 'right') {
+      getRandomQuestion();
+    } else if (direction === 'up') {
+      navigateLevel('down');
+    } else if (direction === 'down') {
+      navigateLevel('up');
+    }
+  },
 });
 
 const handleKeyPress = (e) => {
@@ -106,7 +102,7 @@ const chipStyle = computed(() => {
 </script>
 
 <template>
-  <div v-if="currentInstance && currentQuestion" class="instance-view" ref="el">
+  <div v-if="currentInstance && currentQuestion" class="instance-view" :style="instanceStyle" ref="el">
     <LevelIndicator :level="currentQuestion.level" :style="chipStyle" />
     <TypeIndicator :type="currentQuestion.type" :style="chipStyle" />
     <QuestionDisplay :question="currentQuestion" />
@@ -122,5 +118,6 @@ const chipStyle = computed(() => {
   height: 100vh;
   width: 100vw;
   position: relative;
+  touch-action: none; /* Prevent default browser touch actions */
 }
 </style>
