@@ -1,0 +1,24 @@
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+  <!-- Speech bubble with rounded corners -->
+  <path d="M64 80 C64 48, 96 16, 128 16 L384 16 C416 16, 448 48, 448 80 L448 272 C448 304, 416 336, 384 336 L192 336 L96 416 L96 336 C64 336, 64 304, 64 272 Z" 
+        fill="#2563eb" 
+        stroke="none"/>
+  
+  <!-- "Medium" text -->
+  <text x="128" y="160" 
+        font-family="Arial, sans-serif" 
+        font-size="72" 
+        font-weight="bold" 
+        fill="white" 
+        text-anchor="left" 
+        dominant-baseline="central">Medium</text>
+  
+  <!-- "Talk" text -->
+  <text x="128" y="240" 
+        font-family="Arial, sans-serif" 
+        font-size="72" 
+        font-weight="bold" 
+        fill="white" 
+        text-anchor="left" 
+        dominant-baseline="central">Talk</text>
+</svg>
