@@ -29,7 +29,7 @@ onMounted(() => {
       </ul>
     </div>
     <div class="attribution">
-      <p>Created by Nicholas Bennett</p>
+      <p>Created by <a href="https://github.com/nrrb">Nicholas Bennett</a></p>
     </div>
   </div>
 </template>
