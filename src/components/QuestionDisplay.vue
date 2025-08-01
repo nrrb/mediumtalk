@@ -9,7 +9,9 @@ defineProps({
 
 <template>
   <div class="question-display">
-    <p>{{ question.text }}</p>
+    <transition name="fade" mode="out-in">
+      <p :key="question.text">{{ question.text }}</p>
+    </transition>
   </div>
 </template>
 
@@ -21,9 +23,20 @@ defineProps({
   height: 100%;
   text-align: center;
   padding: 2rem;
+  transition: transform 0.3s ease-in-out;
 }
 p {
     font-size: 1.5rem;
     line-height: 1.6;
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.25s ease;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
 }
 </style>
