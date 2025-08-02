@@ -142,12 +142,21 @@ const chipStyle = computed(() => {
 }
 
 .home-link {
-  position: absolute;
-  bottom: 2rem;
+  position: fixed;
+  bottom: 1.5rem;
+  left: 0;
+  right: 0;
+  display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
   font-family: 'Kaph', sans-serif;
   font-size: 1rem;
+  z-index: 100;
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
 }
 </style>
