@@ -124,7 +124,7 @@ const chipStyle = computed(() => {
     <TypeIndicator :type="currentQuestion.type" :instance-styles="chipStyle" />
     <QuestionDisplay :question="currentQuestion" />
     <router-link to="/" class="home-link">
-      {{ currentInstance.name }}
+      leave {{ currentInstance.name }}
     </router-link>
   </div>
 </template>
@@ -148,7 +148,6 @@ const chipStyle = computed(() => {
   justify-content: center;
   text-align: center;
   font-family: 'Kaph', sans-serif;
-  font-size: 2rem;
-  line-height: 1.6;
+  font-size: 1rem;
 }
 </style>
