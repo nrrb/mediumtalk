@@ -67,11 +67,12 @@ const closeTutorial = () => {
 }
 
 .tutorial-content {
-  background: white;
   border-radius: 16px;
   padding: 24px;
   max-width: 320px;
   width: 90%;
+  background-color: white;
+  color: black;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
   animation: slideUp 0.4s ease-out;
 }
@@ -85,7 +86,6 @@ const closeTutorial = () => {
 
 .tutorial-header h3 {
   margin: 0;
-  color: #333;
   font-size: 18px;
 }
 
