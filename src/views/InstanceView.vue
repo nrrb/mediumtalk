@@ -136,7 +136,10 @@ const chipStyle = computed(() => {
   align-items: center;
   height: 100vh;
   width: 100vw;
-  position: relative;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow: hidden;
   touch-action: none; /* Prevent default browser touch actions */
 }
 
