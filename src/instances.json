@@ -28,5 +28,405 @@
       "chipBackground": "#000000",
       "chipText": "#FFFFFF"
     }
+  },
+  {
+    "name": "New York City",
+    "path": "/new-york-city",
+    "colorScheme": {
+      "background": "#E5E5E5",
+      "text": "#1F1F1F",
+      "chipBackground": "#FFD700",
+      "chipText": "#000000"
+    }
+  },
+  {
+    "name": "Los Angeles",
+    "path": "/los-angeles",
+    "colorScheme": {
+      "background": "#87CEEB",
+      "text": "#000000",
+      "chipBackground": "#FF6B35",
+      "chipText": "#FFFFFF"
+    }
+  },
+  {
+    "name": "Miami",
+    "path": "/miami",
+    "colorScheme": {
+      "background": "#FFE4B5",
+      "text": "#000000",
+      "chipBackground": "#FF69B4",
+      "chipText": "#FFFFFF"
+    }
+  },
+  {
+    "name": "Seattle",
+    "path": "/seattle",
+    "colorScheme": {
+      "background": "#708090",
+      "text": "#FFFFFF",
+      "chipBackground": "#2F4F4F",
+      "chipText": "#FFFFFF"
+    }
+  },
+  {
+    "name": "Boston",
+    "path": "/boston",
+    "colorScheme": {
+      "background": "#F5DEB3",
+      "text": "#000000",
+      "chipBackground": "#B22222",
+      "chipText": "#FFFFFF"
+    }
+  },
+  {
+    "name": "Denver",
+    "path": "/denver",
+    "colorScheme": {
+      "background": "#87CEEB",
+      "text": "#000000",
+      "chipBackground": "#8B4513",
+      "chipText": "#FFFFFF"
+    }
+  },
+  {
+    "name": "Austin",
+    "path": "/austin",
+    "colorScheme": {
+      "background": "#32CD32",
+      "text": "#000000",
+      "chipBackground": "#6A5ACD",
+      "chipText": "#FFFFFF"
+    }
+  },
+  {
+    "name": "San Francisco",
+    "path": "/san-francisco",
+    "colorScheme": {
+      "background": "#C0C0C0",
+      "text": "#000000",
+      "chipBackground": "#FF4500",
+      "chipText": "#FFFFFF"
+    }
+  },
+  {
+    "name": "Las Vegas",
+    "path": "/las-vegas",
+    "colorScheme": {
+      "background": "#2F4F4F",
+      "text": "#FFD700",
+      "chipBackground": "#FF0000",
+      "chipText": "#FFFFFF"
+    }
+  },
+  {
+    "name": "Vancouver",
+    "path": "/vancouver",
+    "colorScheme": {
+      "background": "#B0C4DE",
+      "text": "#000000",
+      "chipBackground": "#008B8B",
+      "chipText": "#FFFFFF"
+    }
+  },
+  {
+    "name": "London",
+    "path": "/london",
+    "colorScheme": {
+      "background": "#F5F5DC",
+      "text": "#000000",
+      "chipBackground": "#DC143C",
+      "chipText": "#FFFFFF"
+    }
+  },
+  {
+    "name": "Paris",
+    "path": "/paris",
+    "colorScheme": {
+      "background": "#F5DEB3",
+      "text": "#000000",
+      "chipBackground": "#FFB6C1",
+      "chipText": "#000000"
+    }
+  },
+  {
+    "name": "Rome",
+    "path": "/rome",
+    "colorScheme": {
+      "background": "#F0E68C",
+      "text": "#000000",
+      "chipBackground": "#CD853F",
+      "chipText": "#000000"
+    }
+  },
+  {
+    "name": "Barcelona",
+    "path": "/barcelona",
+    "colorScheme": {
+      "background": "#9ACD32",
+      "text": "#000000",
+      "chipBackground": "#FF6347",
+      "chipText": "#FFFFFF"
+    }
+  },
+  {
+    "name": "Amsterdam",
+    "path": "/amsterdam",
+    "colorScheme": {
+      "background": "#90EE90",
+      "text": "#000000",
+      "chipBackground": "#FF8C00",
+      "chipText": "#000000"
+    }
+  },
+  {
+    "name": "Berlin",
+    "path": "/berlin",
+    "colorScheme": {
+      "background": "#2F4F4F",
+      "text": "#FFD700",
+      "chipBackground": "#DC143C",
+      "chipText": "#FFFFFF"
+    }
+  },
+  {
+    "name": "Prague",
+    "path": "/prague",
+    "colorScheme": {
+      "background": "#F5DEB3",
+      "text": "#000000",
+      "chipBackground": "#DAA520",
+      "chipText": "#000000"
+    }
+  },
+  {
+    "name": "Vienna",
+    "path": "/vienna",
+    "colorScheme": {
+      "background": "#F5F5DC",
+      "text": "#000000",
+      "chipBackground": "#FFD700",
+      "chipText": "#000000"
+    }
+  },
+  {
+    "name": "Stockholm",
+    "path": "/stockholm",
+    "colorScheme": {
+      "background": "#F0F8FF",
+      "text": "#000000",
+      "chipBackground": "#4682B4",
+      "chipText": "#FFFFFF"
+    }
+  },
+  {
+    "name": "Copenhagen",
+    "path": "/copenhagen",
+    "colorScheme": {
+      "background": "#F5F5DC",
+      "text": "#000000",
+      "chipBackground": "#4169E1",
+      "chipText": "#FFFFFF"
+    }
+  },
+  {
+    "name": "Tokyo",
+    "path": "/tokyo",
+    "colorScheme": {
+      "background": "#F0F8FF",
+      "text": "#000000",
+      "chipBackground": "#DC143C",
+      "chipText": "#FFFFFF"
+    }
+  },
+  {
+    "name": "Seoul",
+    "path": "/seoul",
+    "colorScheme": {
+      "background": "#FF69B4",
+      "text": "#000000",
+      "chipBackground": "#4169E1",
+      "chipText": "#FFFFFF"
+    }
+  },
+  {
+    "name": "Beijing",
+    "path": "/beijing",
+    "colorScheme": {
+      "background": "#FFD700",
+      "text": "#000000",
+      "chipBackground": "#DC143C",
+      "chipText": "#FFFFFF"
+    }
+  },
+  {
+    "name": "Shanghai",
+    "path": "/shanghai",
+    "colorScheme": {
+      "background": "#C0C0C0",
+      "text": "#000000",
+      "chipBackground": "#FF6347",
+      "chipText": "#FFFFFF"
+    }
+  },
+  {
+    "name": "Hong Kong",
+    "path": "/hong-kong",
+    "colorScheme": {
+      "background": "#FFD700",
+      "text": "#000000",
+      "chipBackground": "#FF0000",
+      "chipText": "#FFFFFF"
+    }
+  },
+  {
+    "name": "Singapore",
+    "path": "/singapore",
+    "colorScheme": {
+      "background": "#32CD32",
+      "text": "#000000",
+      "chipBackground": "#DC143C",
+      "chipText": "#FFFFFF"
+    }
+  },
+  {
+    "name": "Bangkok",
+    "path": "/bangkok",
+    "colorScheme": {
+      "background": "#FFD700",
+      "text": "#000000",
+      "chipBackground": "#FF6347",
+      "chipText": "#FFFFFF"
+    }
+  },
+  {
+    "name": "Mumbai",
+    "path": "/mumbai",
+    "colorScheme": {
+      "background": "#FFD700",
+      "text": "#000000",
+      "chipBackground": "#FF8C00",
+      "chipText": "#000000"
+    }
+  },
+  {
+    "name": "Dubai",
+    "path": "/dubai",
+    "colorScheme": {
+      "background": "#F5DEB3",
+      "text": "#000000",
+      "chipBackground": "#DAA520",
+      "chipText": "#000000"
+    }
+  },
+  {
+    "name": "Tel Aviv",
+    "path": "/tel-aviv",
+    "colorScheme": {
+      "background": "#F5DEB3",
+      "text": "#000000",
+      "chipBackground": "#4682B4",
+      "chipText": "#FFFFFF"
+    }
+  },
+  {
+    "name": "Sydney",
+    "path": "/sydney",
+    "colorScheme": {
+      "background": "#F5DEB3",
+      "text": "#000000",
+      "chipBackground": "#4682B4",
+      "chipText": "#FFFFFF"
+    }
+  },
+  {
+    "name": "Melbourne",
+    "path": "/melbourne",
+    "colorScheme": {
+      "background": "#2F4F4F",
+      "text": "#DAA520",
+      "chipBackground": "#8B0000",
+      "chipText": "#FFFFFF"
+    }
+  },
+  {
+    "name": "Auckland",
+    "path": "/auckland",
+    "colorScheme": {
+      "background": "#F0F8FF",
+      "text": "#000000",
+      "chipBackground": "#4682B4",
+      "chipText": "#FFFFFF"
+    }
+  },
+  {
+    "name": "Rio de Janeiro",
+    "path": "/rio-de-janeiro",
+    "colorScheme": {
+      "background": "#32CD32",
+      "text": "#000000",
+      "chipBackground": "#FFD700",
+      "chipText": "#000000"
+    }
+  },
+  {
+    "name": "Buenos Aires",
+    "path": "/buenos-aires",
+    "colorScheme": {
+      "background": "#87CEEB",
+      "text": "#000000",
+      "chipBackground": "#FFD700",
+      "chipText": "#000000"
+    }
+  },
+  {
+    "name": "São Paulo",
+    "path": "/sao-paulo",
+    "colorScheme": {
+      "background": "#2F4F4F",
+      "text": "#FFD700",
+      "chipBackground": "#FF6347",
+      "chipText": "#FFFFFF"
+    }
+  },
+  {
+    "name": "Cape Town",
+    "path": "/cape-town",
+    "colorScheme": {
+      "background": "#4682B4",
+      "text": "#FFFFFF",
+      "chipBackground": "#FFD700",
+      "chipText": "#000000"
+    }
+  },
+  {
+    "name": "Marrakech",
+    "path": "/marrakech",
+    "colorScheme": {
+      "background": "#CD853F",
+      "text": "#000000",
+      "chipBackground": "#FFD700",
+      "chipText": "#000000"
+    }
+  },
+  {
+    "name": "Cairo",
+    "path": "/cairo",
+    "colorScheme": {
+      "background": "#DAA520",
+      "text": "#000000",
+      "chipBackground": "#8B4513",
+      "chipText": "#FFFFFF"
+    }
+  },
+  {
+    "name": "Nairobi",
+    "path": "/nairobi",
+    "colorScheme": {
+      "background": "#228B22",
+      "text": "#FFFFFF",
+      "chipBackground": "#FFD700",
+      "chipText": "#000000"
+    }
   }
 ]
