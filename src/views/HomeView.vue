@@ -47,7 +47,7 @@ onMounted(() => {
       <p>"{{ randomQuestion.text }}"</p>
     </div>
     <div class="description">
-      <p>A nice little app to give you questions to start conversations, bypassing small talk.</p>
+      <p>Get to know someone.</p>
     </div>
     <div class="instance-list">
       <h2>Themes</h2>
