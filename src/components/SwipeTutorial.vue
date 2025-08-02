@@ -14,15 +14,15 @@
           </div>
           <div class="gesture-item">
             <div class="arrow right">→</div>
-            <span>Swipe right for previous</span>
+            <span>Swipe right for previous question</span>
           </div>
           <div class="gesture-item">
             <div class="arrow up">↑</div>
-            <span>Swipe up for next level</span>
+            <span>Swipe up for previous level</span>
           </div>
           <div class="gesture-item">
             <div class="arrow down">↓</div>
-            <span>Swipe down for previous level</span>
+            <span>Swipe down for next level</span>
           </div>
         </div>
         
