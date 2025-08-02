@@ -38,7 +38,7 @@ onMounted(() => {
       </ul>
     </div>
     <div class="attribution">
-      <p>Created by <a href="https://github.com/nrrb">Nicholas Bennett</a></p>
+      <p>Created by <img src="@/assets/portrait.jpg" alt="" class="portrait"> <a href="https://github.com/nrrb">Nicholas Bennett</a></p>
     </div>
   </div>
 </template>
@@ -47,6 +47,28 @@ onMounted(() => {
 .home-view {
   padding: 2rem;
   text-align: center;
+}
+
+.portrait {
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  object-fit: cover;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 0.25rem;
+  transition: all 200ms ease-in-out;
+  transform-origin: center center;
+  position: relative;
+  z-index: 1;
+}
+
+.portrait:hover {
+  width: 16rem;
+  height: 16rem;
+  margin: -8rem 0.25rem -8rem 0.25rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  z-index: 10;
 }
 .random-question-sample {
     margin: 2rem 0;
