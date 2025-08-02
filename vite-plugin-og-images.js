@@ -39,63 +39,51 @@ export function generateOgImages(options = {}) {
         throw error;
       }
 
-      // Generate images and HTML for each instance
+      // Generate images for each instance
       for (const instance of instances) {
         const imageName = `${instance.name.toLowerCase().replace(/\s+/g, '-')}.png`;
-        const imagePath = `${basePath}og-images/${imageName}`;
         
-        // Generate the OG image
-        const pngBuffer = await generateOgImage({
-          title: instance.name,
-          colors: instance.colorScheme,
-        });
-
-        // Save the image
+        // Generate and save the OG image and SVG
         const outputPath = join(fullOutputDir, imageName);
-        console.log(`Writing OpenGraph image to: ${outputPath}`);
+        console.log(`Generating OpenGraph image: ${outputPath}`);
         try {
+          const pngBuffer = await generateOgImage({
+            title: instance.name,
+            colors: instance.colorScheme,
+            saveSvg: true,
+            outputPath: outputPath
+          });
+          
+          // Save the PNG
           await writeFile(outputPath, pngBuffer);
           console.log(`Successfully wrote OpenGraph image: ${outputPath}`);
         } catch (error) {
-          console.error(`Error writing OpenGraph image:`, error);
+          console.error(`Error generating OpenGraph image:`, error);
           throw error;
         }
-
-        // Generate instance-specific HTML
-        const instanceHtml = html
-          .replace('OG_TITLE', `Medium Talk: ${instance.name}`)
-          .replace('OG_DESCRIPTION', `Conversation starters for ${instance.name}`)
-          .replace(/OG_IMAGE/g, `${siteUrl}${imagePath}`)
-          .replace('OG_URL', `${siteUrl}${instance.path}`);
-
-        // Write instance-specific HTML
-        const instanceHtmlPath = join(__dirname, outputDir.replace(/\/og-images$/, ''), instance.path.replace(/^\//, ''), 'index.html');
-        await mkdir(dirname(instanceHtmlPath), { recursive: true });
-        await writeFile(instanceHtmlPath, instanceHtml);
-        console.log(`Generated HTML for ${instance.name} at ${instanceHtmlPath}`);
       }
 
-      // Also generate the default homepage HTML
-      const defaultHtml = html
-        .replace('OG_TITLE', 'Medium Talk - Conversation Starter Questions')
-        .replace('OG_DESCRIPTION', 'A nice little app to give you questions to start conversations, bypassing small talk.')
-        .replace(/OG_IMAGE/g, `${siteUrl}${basePath}og-images/default.png`)
-        .replace('OG_URL', siteUrl);
-
-      // Generate a default OG image
-      const defaultPngBuffer = await generateOgImage({
-        title: 'Medium Talk',
-        colors: {
-          background: '#4a6fa5',
-          text: '#6b8cae',
-          chipBackground: '#8fa8c7',
-          chipText: '#b3c5d7'
-        },
-      });
-      await writeFile(join(fullOutputDir, 'default.png'), defaultPngBuffer);
-      
-      // Write the default HTML
-      await writeFile(join(__dirname, outputDir.replace(/\/og-images$/, ''), 'index.html'), defaultHtml);
+      // Generate and save default OG image and SVG
+      const defaultOutputPath = join(fullOutputDir, 'default.png');
+      console.log(`Generating default OpenGraph image: ${defaultOutputPath}`);
+      try {
+        const defaultPngBuffer = await generateOgImage({
+          title: 'Medium Talk',
+          colors: {
+            background: '#4a6fa5',
+            text: '#6b8cae',
+            chipBackground: '#8fa8c7',
+            chipText: '#b3c5d7'
+          },
+          saveSvg: true,
+          outputPath: defaultOutputPath
+        });
+        await writeFile(defaultOutputPath, defaultPngBuffer);
+        console.log(`Successfully wrote default OpenGraph image: ${defaultOutputPath}`);
+      } catch (error) {
+        console.error('Error generating default OpenGraph image:', error);
+        throw error;
+      }
     },
   };
 }

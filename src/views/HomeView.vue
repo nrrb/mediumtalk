@@ -71,6 +71,9 @@ onMounted(() => {
         </span>
         <a href="https://github.com/nrrb">Nicholas Bennett</a>
       </p>
+      <p>Hosted by <a href="https://vercel.com">Vercel</a></p>
+      <p>Source code on <a href="https://github.com/nrrb/mediumtalk">GitHub</a></p>
+      <p>Kaph font by <a href="https://ggbot.itch.io/kaph-font">GGBot </a></p>
     </div>
   </div>
 </template>

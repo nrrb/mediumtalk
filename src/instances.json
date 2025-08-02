@@ -13,9 +13,9 @@
     "name": "Philadelphia",
     "path": "/philadelphia",
     "colorScheme": {
-      "background": "#004890",
+      "background": "#004C54",
       "text": "#FFFFFF",
-      "chipBackground": "#FFC600",
+      "chipBackground": "#B87333",
       "chipText": "#000000"
     }
   },

@@ -1,6 +1,6 @@
 # Medium Talk
 
-A nice little app to give you questions to start conversations, bypassing small talk.
+Get to know someone.
 
 I created this group after moving to Baltimore, to help hold platonic picnics where we get help with getting past the small talk and actually into connecting as friends. Over my years of working as a full-time Uber driver, Trader Joe's cashier, and in desktop tech support, along with a lifelong passion for striking up conversation with strangers, I have gained a sense of what kinds of questions can connect us quickly. 
 

@@ -7,7 +7,6 @@ import instances from '@/instances.json';
 import QuestionDisplay from '@/components/QuestionDisplay.vue';
 import LevelIndicator from '@/components/LevelIndicator.vue';
 import TypeIndicator from '@/components/TypeIndicator.vue';
-import HomeIcon from '@/assets/home.svg';
 
 const route = useRoute();
 const currentQuestion = ref(null);
