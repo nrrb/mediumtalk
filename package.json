@@ -9,6 +9,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@resvg/resvg-js": "^2.6.2",
+    "@resvg/resvg-wasm": "^2.6.2",
     "@vueuse/core": "^13.6.0",
     "pinia": "^3.0.3",
     "vue": "^3.5.17",
