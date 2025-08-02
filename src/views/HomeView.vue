@@ -3,6 +3,26 @@ import { ref, onMounted } from 'vue';
 import questions from '@/questions.json';
 import instances from '@/instances.json';
 
+const isPortraitExpanded = ref(false);
+const portraitRef = ref(null);
+
+const togglePortrait = () => {
+  isPortraitExpanded.value = !isPortraitExpanded.value;
+};
+
+const closePortrait = (event) => {
+  if (isPortraitExpanded.value && !portraitRef.value.contains(event.target)) {
+    isPortraitExpanded.value = false;
+  }
+};
+
+onMounted(() => {
+  document.addEventListener('click', closePortrait);
+  return () => {
+    document.removeEventListener('click', closePortrait);
+  };
+});
+
 const getInstanceStyle = (instance) => {
   const { background, text, chipBackground, chipText } = instance.colorScheme;
   return {
@@ -38,7 +58,19 @@ onMounted(() => {
       </ul>
     </div>
     <div class="attribution">
-      <p>Created by <img src="@/assets/portrait.jpg" alt="" class="portrait"> <a href="https://github.com/nrrb">Nicholas Bennett</a></p>
+      <p>Created by 
+        <span @click.stop>
+          <img 
+            ref="portraitRef"
+            src="@/assets/portrait.jpg" 
+            alt="" 
+            class="portrait" 
+            :class="{ 'expanded': isPortraitExpanded }"
+            @click="togglePortrait"
+          >
+        </span>
+        <a href="https://github.com/nrrb">Nicholas Bennett</a>
+      </p>
     </div>
   </div>
 </template>
@@ -61,15 +93,19 @@ onMounted(() => {
   transform-origin: center center;
   position: relative;
   z-index: 1;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
 }
 
-.portrait:hover {
+.portrait:hover,
+.portrait.expanded {
   width: 16rem;
   height: 16rem;
   margin: -8rem 0.25rem -8rem 0.25rem;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
   z-index: 10;
 }
+
 .random-question-sample {
     margin: 2rem 0;
     font-style: italic;
