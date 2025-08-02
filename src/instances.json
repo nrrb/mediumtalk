@@ -18,5 +18,15 @@
       "chipBackground": "#FFC600",
       "chipText": "#000000"
     }
+  },
+  {
+    "name": "Chicago",
+    "path": "/chicago",
+    "colorScheme": {
+      "background": "#41B6E6",
+      "text": "#E4002B",
+      "chipBackground": "#000000",
+      "chipText": "#FFFFFF"
+    }
   }
 ]
