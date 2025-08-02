@@ -120,24 +120,16 @@ const chipStyle = computed(() => {
 
 <template>
   <div v-if="currentInstance && currentQuestion" class="instance-view" ref="el">
-    <h1>{{ currentInstance.name }}</h1>
     <LevelIndicator :level="currentQuestion.level" :instance-styles="chipStyle" />
     <TypeIndicator :type="currentQuestion.type" :instance-styles="chipStyle" />
     <QuestionDisplay :question="currentQuestion" />
     <router-link to="/" class="home-link">
-      <img :src="HomeIcon" alt="Home" class="home-icon" />
+      {{ currentInstance.name }}
     </router-link>
   </div>
 </template>
 
 <style scoped>
-h1 {
-  text-align: center;
-  font-family: 'Kaph', sans-serif;
-  font-size: 2rem;
-  line-height: 1.6;
-}
-
 .instance-view {
   display: flex;
   flex-direction: column;
@@ -152,24 +144,11 @@ h1 {
 .home-link {
   position: absolute;
   bottom: 2rem;
-  left: 50%;
-  transform: translateX(-50%);
-  padding: 0.5rem;
-  border-radius: 50%;
-  display: flex;
   align-items: center;
   justify-content: center;
-  transition: background-color 0.2s ease;
-}
-
-.home-link:hover {
-  background-color: rgba(255, 255, 255, 0.1);
-}
-
-.home-icon {
-  width: 2em;
-  height: 2em;
-  position: fixed;
-  bottom: 5px;
+  text-align: center;
+  font-family: 'Kaph', sans-serif;
+  font-size: 2rem;
+  line-height: 1.6;
 }
 </style>

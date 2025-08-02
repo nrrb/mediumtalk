@@ -16,6 +16,7 @@ onMounted(() => {
   const randomIndex = Math.floor(Math.random() * questions.length);
   randomQuestion.value = questions[randomIndex];
   document.body.style.backgroundColor = '#FFFFFF';
+  document.body.style.color = '#000000';
 });
 </script>
 
