@@ -95,17 +95,17 @@ watch(instancePath, () => {
 const chipStyle = computed(() => {
     if (!currentInstance.value) return {};
     return {
-        backgroundColor: currentInstance.value.colorScheme.chipBackground,
-        color: currentInstance.value.colorScheme.chipText
+        chipBackground: currentInstance.value.colorScheme.chipBackground,
+        chipText: currentInstance.value.colorScheme.chipText
     }
 });
 
 </script>
 
 <template>
-  <div v-if="currentInstance && currentQuestion" class="instance-view" :style="instanceStyle" ref="el">
-    <LevelIndicator :level="currentQuestion.level" :style="chipStyle" />
-    <TypeIndicator :type="currentQuestion.type" :style="chipStyle" />
+  <div v-if="currentInstance && currentQuestion" class="instance-view" ref="el">
+    <LevelIndicator :level="currentQuestion.level" :instance-styles="chipStyle" />
+    <TypeIndicator :type="currentQuestion.type" :instance-styles="chipStyle" />
     <QuestionDisplay :question="currentQuestion" />
     <router-link to="/" class="home-link">
       <img :src="HomeIcon" alt="Home" class="home-icon" />

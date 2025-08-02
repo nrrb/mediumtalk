@@ -3,12 +3,16 @@ defineProps({
   type: {
     type: String,
     required: true
+  },
+  instanceStyles: {
+    type: Object,
+    required: true
   }
 })
 </script>
 
 <template>
-  <div class="type-indicator">
+  <div class="type-indicator" :style="{ backgroundColor: instanceStyles.chipBackground, color: instanceStyles.chipText }">
     <span>{{ type }}</span>
   </div>
 </template>
