@@ -12,6 +12,7 @@ import HomeIcon from '@/assets/home.svg';
 const route = useRoute();
 const currentQuestion = ref(null);
 const currentInstance = ref(null);
+const currentIndex = ref(0);
 
 const instancePath = computed(() => `/${route.params.instanceName}`);
 
@@ -25,15 +26,26 @@ const setInstance = () => {
 
 const currentLevel = ref('Surface');
 
-const questionsByLevel = computed(() => {
-    return questions.filter(q => q.level === currentLevel.value)
-});
-
 const getRandomQuestion = (level = currentLevel.value) => {
     currentLevel.value = level;
     const levelQuestions = questions.filter(q => q.level === level);
     const randomIndex = Math.floor(Math.random() * levelQuestions.length);
     currentQuestion.value = levelQuestions[randomIndex];
+    currentIndex.value = randomIndex;
+};
+
+const getNextQuestion = () => {
+    const levelQuestions = questions.filter(q => q.level === currentLevel.value);
+    const nextIndex = (currentIndex.value + 1) % levelQuestions.length;
+    currentQuestion.value = levelQuestions[nextIndex];
+    currentIndex.value = nextIndex;
+};
+
+const getPreviousQuestion = () => {
+    const levelQuestions = questions.filter(q => q.level === currentLevel.value);
+    const prevIndex = (currentIndex.value - 1 + levelQuestions.length) % levelQuestions.length;
+    currentQuestion.value = levelQuestions[prevIndex];
+    currentIndex.value = prevIndex;
 };
 
 const levels = ['Surface', 'Sub-Surface', 'Core'];
@@ -52,8 +64,10 @@ const navigateLevel = (direction) => {
 const el = ref(null);
 const { isSwiping } = useSwipe(el, {
   onSwipeEnd: (e, direction) => {
-    if (direction === 'left' || direction === 'right') {
-      getRandomQuestion();
+    if (direction === 'left') {
+      getNextQuestion();
+    } else if (direction === 'right') {
+      getPreviousQuestion();
     } else if (direction === 'up') {
       navigateLevel('down');
     } else if (direction === 'down') {
@@ -71,8 +85,10 @@ const handleKeyPress = (e) => {
             navigateLevel('down');
             break;
         case 'ArrowLeft':
+            getPreviousQuestion();
+            break;
         case 'ArrowRight':
-            getRandomQuestion();
+            getNextQuestion();
             break;
     }
 };
@@ -104,6 +120,7 @@ const chipStyle = computed(() => {
 
 <template>
   <div v-if="currentInstance && currentQuestion" class="instance-view" ref="el">
+    <h1>{{ currentInstance.name }}</h1>
     <LevelIndicator :level="currentQuestion.level" :instance-styles="chipStyle" />
     <TypeIndicator :type="currentQuestion.type" :instance-styles="chipStyle" />
     <QuestionDisplay :question="currentQuestion" />
@@ -114,6 +131,13 @@ const chipStyle = computed(() => {
 </template>
 
 <style scoped>
+h1 {
+  text-align: center;
+  font-family: 'Kaph', sans-serif;
+  font-size: 2rem;
+  line-height: 1.6;
+}
+
 .instance-view {
   display: flex;
   flex-direction: column;

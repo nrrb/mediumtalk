@@ -29,7 +29,7 @@ onMounted(() => {
       <p>A nice little app to give you questions to start conversations, bypassing small talk.</p>
     </div>
     <div class="instance-list">
-      <h2>Instances</h2>
+      <h2>Themes</h2>
       <ul class="instance-list">
         <li v-for="instance in instances" :key="instance.path">
           <router-link :to="instance.path" class="instance-link" :style="getInstanceStyle(instance)">{{ instance.name }}</router-link>
