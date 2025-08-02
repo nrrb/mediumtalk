@@ -11,7 +11,7 @@ export function updateMetaTags(instanceName = '') {
   const title = instanceName ? `Medium Talk: ${instanceName}` : 'Medium Talk - Conversation Starters'
   const description = instanceName 
     ? `Conversation starters for ${instanceName}`
-    : 'A nice little app to give you questions to start conversations, bypassing small talk.'
+    : 'Get to know someone.'
   const image = instanceName 
     ? `/og-images/${instanceName.toLowerCase()}.png`
     : '/og-images/default.png'
@@ -57,7 +57,7 @@ const routes = [
     meta: {
       title: 'Medium Talk - Conversation Starters',
       metaTags: [
-        { name: 'description', content: 'A nice little app to give you questions to start conversations, bypassing small talk.' },
+        { name: 'description', content: 'Get to know someone.' },
         { property: 'og:type', content: 'website' }
       ]
     }
