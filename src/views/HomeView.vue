@@ -35,8 +35,8 @@ const randomQuestion = ref(null);
 onMounted(() => {
   const randomIndex = Math.floor(Math.random() * questions.length);
   randomQuestion.value = questions[randomIndex];
-  document.body.style.backgroundColor = '#FFFFFF';
-  document.body.style.color = '#000000';
+  document.body.style.backgroundColor = '#fafaf9';
+  document.body.style.color = '#2d2d2d';
 });
 </script>
 
@@ -77,7 +77,7 @@ onMounted(() => {
   </div>
 </template>
 
-<style scoped>
+<style scoped>   
 h1 {
     font-family: 'Kaph', sans-serif;
     font-size: 4rem;
