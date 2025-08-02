@@ -65,13 +65,13 @@ const el = ref(null);
 const { isSwiping } = useSwipe(el, {
   onSwipeEnd: (e, direction) => {
     if (direction === 'left') {
-      getNextQuestion();
-    } else if (direction === 'right') {
       getPreviousQuestion();
+    } else if (direction === 'right') {
+      getNextQuestion();
     } else if (direction === 'up') {
-      navigateLevel('down');
-    } else if (direction === 'down') {
       navigateLevel('up');
+    } else if (direction === 'down') {
+      navigateLevel('down');
     }
   },
 });
