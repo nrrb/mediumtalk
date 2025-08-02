@@ -50,7 +50,6 @@ onMounted(() => {
       <p>Get to know someone.</p>
     </div>
     <div class="instance-list">
-      <h2>Themes</h2>
       <ul class="instance-list">
         <li v-for="instance in instances" :key="instance.path">
           <router-link :to="instance.path" class="instance-link" :style="getInstanceStyle(instance)">{{ instance.name }}</router-link>
@@ -79,6 +78,12 @@ onMounted(() => {
 </template>
 
 <style scoped>
+h1 {
+    font-family: 'Kaph', sans-serif;
+    font-size: 4rem;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.7), 3px 3px 6px rgba(0,0,0,0.4), 
+    5px 5px 10px rgba(0,0,0,0.2);
+}
 .home-view {
   padding: 2rem;
   text-align: center;
@@ -115,8 +120,10 @@ onMounted(() => {
 }
 .instance-list {
     text-align: center;
+
 }
 .instance-list ul {
+  padding-top: 2rem;
   list-style: none;
   padding: 0;
   display: flex;
