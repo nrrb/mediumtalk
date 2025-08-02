@@ -24,8 +24,9 @@ defineProps({
   text-align: center;
   padding: 2rem;
   transition: transform 0.3s ease-in-out;
-  text-shadow: 1px 1px 2px rgba(0,0,0,0.7), 3px 3px 6px rgba(0,0,0,0.4), 
-  5px 5px 10px rgba(0,0,0,0.2);
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.7), 
+                3px 3px 6px rgba(0,0,0,0.4), 
+                5px 5px 10px rgba(0,0,0,0.2);
 }
 p {
     font-family: 'Kaph', sans-serif;

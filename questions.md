@@ -2,9 +2,6 @@
 
 ## Surface Level
 
-### Group Questions
-*Suitable for team building, parties, workshops, or casual group settings*
-
 - Picture yourself at age 8 - what would completely blow your mind about your life now?
 - Imagine you could give your past self one piece of practical advice - what would it be?
 - Consider your daily habits - which one would be hardest to give up?
@@ -108,10 +105,6 @@
 - What's a random act of kindness you witnessed that stuck with you?
 - What's something you do that you think everyone should try?
 - If you could create a holiday, what would it celebrate?
-
-### 1:1 Questions
-*Better suited for deeper, one-on-one conversations*
-
 - Notice the last thing that made you stop and pay attention - why did it catch you?
 - Picture a conversation that changed your perspective on something small but important.
 - Think of a stranger who made an impression on you - why do you still remember them?
@@ -131,9 +124,6 @@
 - What's a story someone has told you that you'll never forget?
 
 ## Sub-Surface Level
-
-### Group Questions
-*Good for workshops, deeper team building, or thoughtful group discussions*
 
 - Reflect on your biggest misconception about adulthood when you were younger.
 - Consider how you handle being the center of attention - comfort or discomfort?
@@ -200,10 +190,6 @@
 - How do you know when you're living authentically?
 - What's something you wish more people would talk openly about?
 - What's a lesson you've learned that you wish you could share with everyone?
-
-### 1:1 Questions
-*Require more intimate conversation and trust*
-
 - Examine your relationship with perfectionism - how has it served and hindered you?
 - Consider the person you were five years ago - what would they need to hear from you now?
 - Think about a time when your intuition saved you from making a big mistake.
@@ -243,9 +229,6 @@
 
 ## Core Level
 
-### Group Questions
-*Suitable for therapeutic groups, support circles, or very trusted group settings with established safety*
-
 - Consider what you most want to heal in the world through your own healing.
 - Think about the legacy you want to leave in the hearts of people you've loved.
 - How do you hold onto hope when everything feels uncertain?
@@ -258,10 +241,6 @@
 - What's something you're learning to accept about life?
 - When have you felt most at home in your own skin?
 - What's something you want to create or leave behind in this world?
-
-### 1:1 Questions
-*Require deep trust, safety, and intimate conversation*
-
 - Explore the moment you realized you were worthy of love exactly as you are.
 - Share what it feels like when you're holding back tears and someone notices.
 - Reflect on a time when someone's presence was medicine for your spirit.

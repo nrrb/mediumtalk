@@ -6,7 +6,6 @@ import questions from '@/questions.json';
 import instances from '@/instances.json';
 import QuestionDisplay from '@/components/QuestionDisplay.vue';
 import LevelIndicator from '@/components/LevelIndicator.vue';
-import TypeIndicator from '@/components/TypeIndicator.vue';
 
 const route = useRoute();
 const currentQuestion = ref(null);
@@ -120,7 +119,6 @@ const chipStyle = computed(() => {
 <template>
   <div v-if="currentInstance && currentQuestion" class="instance-view" ref="el">
     <LevelIndicator :level="currentQuestion.level" :instance-styles="chipStyle" />
-    <TypeIndicator :type="currentQuestion.type" :instance-styles="chipStyle" />
     <QuestionDisplay :question="currentQuestion" />
     <router-link to="/" class="home-link">
       leave {{ currentInstance.name }}

@@ -10,15 +10,9 @@ const lines = markdown.split('\n');
 
 const questions = [];
 let currentLevel = '';
-let currentType = '';
 
 for (const line of lines) {
-    if (line.startsWith('### ')) {
-        const typeMatch = line.match(/### (.*?) Questions/);
-        if (typeMatch) {
-            currentType = typeMatch[1];
-        }
-    } else if (line.startsWith('## ')) {
+    if (line.startsWith('## ')) {
         const levelMatch = line.match(/## (.*?) Level/);
         if (levelMatch) {
             currentLevel = levelMatch[1];
@@ -27,8 +21,7 @@ for (const line of lines) {
         if (currentLevel) {
             questions.push({
                 text: line.substring(2).trim(),
-                level: currentLevel,
-                type: currentType
+                level: currentLevel
             });
         }
     }
