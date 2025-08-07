@@ -1,8 +1,6 @@
 <script setup>
 import { ref, onMounted } from 'vue';
-import questions from '@/questions.json';
 import instances from '@/instances.json';
-import QuestionDisplay from '@/components/QuestionDisplay.vue';
 
 const isPortraitExpanded = ref(false);
 const portraitRef = ref(null);
@@ -41,11 +39,7 @@ const getInstanceStyle = (instance) => {
   };
 };
 
-const randomQuestion = ref(null);
-
 onMounted(() => {
-  const randomIndex = Math.floor(Math.random() * questions.length);
-  randomQuestion.value = questions[randomIndex];
   document.body.style.backgroundColor = '#fafaf9';
   document.body.style.color = '#2d2d2d';
 });
@@ -55,9 +49,6 @@ onMounted(() => {
   <div class="home-view">
     <h1>Medium Talk</h1>
     <h2>Get to know someone.</h2>
-    <div v-if="randomQuestion" class="random-question-sample">
-      <QuestionDisplay :question="randomQuestion" />
-    </div>
     <div class="instance-list">
       <router-link to="/picnic" class="instance-link" :style="getInstanceStyle({
         name: 'No-Small-Talk Picnic',
@@ -103,12 +94,10 @@ onMounted(() => {
 h1 {
     font-family: 'Kaph', sans-serif;
     font-size: 4rem;
-    text-shadow: 1px 1px 2px rgba(0,0,0,0.7), 3px 3px 6px rgba(0,0,0,0.4);
 }
 h2 {
     font-family: 'Kaph', sans-serif;
     font-size: 1.5rem;
-    text-shadow: 1px 1px 2px rgba(0,0,0,0.7);
 }
 .instance-list-title {
     font-family: 'Kaph', sans-serif;

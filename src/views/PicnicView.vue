@@ -142,7 +142,7 @@ const handleKeyPress = (e) => {
   font-family: 'Kaph', sans-serif;
   font-size: 0.75rem;
   position: fixed;
-  top: 1.5rem;
+  top: 1.75rem;
   left: 0;
   right: 0;
   display: flex;
@@ -160,6 +160,7 @@ const handleKeyPress = (e) => {
   text-shadow: 1px 1px 2px rgba(0,0,0,0.7), 
                 3px 3px 6px rgba(0,0,0,0.4), 
                 5px 5px 10px rgba(0,0,0,0.2);
+  padding: 0 1rem;
 }
 
 .picnic-view {
