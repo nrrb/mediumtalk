@@ -5,6 +5,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 import { createPinia } from 'pinia'
 import HomeView from './views/HomeView.vue'
 import InstanceView from './views/InstanceView.vue'
+import PicnicView from './views/PicnicView.vue'
 
 // Function to update meta tags
 export function updateMetaTags(instanceName = '') {
@@ -74,6 +75,21 @@ const routes = [
         { property: 'og:url', content: (route) => `${window.location.origin}/${route.params.instanceName}` },
         { name: 'twitter:card', content: 'summary_large_image' },
         { name: 'twitter:image', content: (route) => `/og-images/${route.params.instanceName.toLowerCase()}.png` }
+      ]
+    }
+  },
+  {
+    path: '/picnic',
+    component: PicnicView,
+    meta: {
+      title: 'Medium Talk - Picnic Conversation Starters',
+      metaTags: [
+        { name: 'description', content: 'Get to know someone.' },
+        { property: 'og:type', content: 'website' },
+        { property: 'og:image', content: '/og-images/original.png' },
+        { property: 'og:url', content: `${window.location.origin}/picnic` },
+        { name: 'twitter:card', content: 'summary_large_image' },
+        { name: 'twitter:image', content: '/og-images/original.png' }        
       ]
     }
   }
