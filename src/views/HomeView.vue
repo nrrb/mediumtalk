@@ -22,19 +22,19 @@ onMounted(() => {
   };
 });
 
-const stripeThickness = 10;
+const stripeThickness = 25;
 const getInstanceStyle = (instance) => {
   const { background, text, chipBackground, chipText } = instance.colorScheme;
   return {
     background: `repeating-linear-gradient(45deg,
     ${background},
-    ${background} ${stripeThickness}rem,
-    ${text} ${stripeThickness}rem,
-    ${text} ${stripeThickness * 2}rem,
-    ${chipBackground} ${stripeThickness * 2}rem,
-    ${chipBackground} ${stripeThickness * 3}rem,
-    ${chipText} ${stripeThickness * 3}rem,
-    ${chipText} ${stripeThickness * 4}rem
+    ${background} ${stripeThickness}%,
+    ${text} ${stripeThickness}%,
+    ${text} ${stripeThickness * 2}%,
+    ${chipBackground} ${stripeThickness * 2}%,
+    ${chipBackground} ${stripeThickness * 3}%,
+    ${chipText} ${stripeThickness * 3}%,
+    ${chipText} ${stripeThickness * 4}%
     )`,
   };
 };
@@ -70,7 +70,7 @@ onMounted(() => {
       </ul>
     </div>
     <div class="attribution">
-      <p>Created by 
+      <p><span v-show="!isPortraitExpanded">Created by </span>
         <span @click.stop>
           <img 
             ref="portraitRef"
@@ -81,7 +81,7 @@ onMounted(() => {
             @click="togglePortrait"
           >
         </span>
-        <a href="https://github.com/nrrb">Nicholas Bennett</a>
+        <span v-show="!isPortraitExpanded"><a href="https://github.com/nrrb">Nicholas Bennett</a></span>
       </p>
       <p>Hosted by <a href="https://vercel.com">Vercel</a></p>
       <p>Source code on <a href="https://github.com/nrrb/mediumtalk">GitHub</a></p>
@@ -132,6 +132,7 @@ h2 {
   margin: -8rem 0.25rem -8rem 0.25rem;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
   z-index: 10;
+  border-radius: 0px;
 }
 
 .random-question-sample {

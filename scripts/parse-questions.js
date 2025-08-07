@@ -53,7 +53,7 @@ for (const [index, line] of picnicQuestionsLines.entries()) {
             picnicQuestions.push({
                 type: currentType,
                 explanation: currentExplanation,
-                question: line.substring(2).trim()
+                text: line.substring(2).trim()
             });
         }
     }

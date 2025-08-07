@@ -1,7 +1,7 @@
 <script setup>
 defineProps({
   question: {
-    type: Object,
+    type: String,
     required: true
   }
 })
@@ -10,7 +10,7 @@ defineProps({
 <template>
   <div class="question-display">
     <transition name="fade" mode="out-in">
-      <p :key="question.text">{{ question.text }}</p>
+      <p :key="question">{{ question }}</p>
     </transition>
   </div>
 </template>
@@ -24,8 +24,10 @@ defineProps({
   text-align: center;
   padding: 2rem;
   transition: transform 0.3s ease-in-out;
-  text-shadow: 1px 1px 2px rgba(0,0,0,0.7), 
-                3px 3px 6px rgba(0,0,0,0.4);
+  /* text-shadow: 1px 1px 2px rgba(0,0,0,0.7), 
+                3px 3px 6px rgba(0,0,0,0.4); */
+  text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.7),
+                3px 3px 6px rgba(255, 255, 255, 0.4);
 }
 p {
     font-family: 'Kaph', sans-serif;

@@ -3,6 +3,7 @@ import { ref, computed, onMounted, onUnmounted } from 'vue';
 import { useSwipe } from '@vueuse/core';
 import { useRouter } from 'vue-router';
 import picnicQuestions from '@/picnic-questions.json';
+import QuestionDisplay from '@/components/QuestionDisplay.vue';
 
 const router = useRouter();
 const el = ref(null);
@@ -109,7 +110,7 @@ const handleKeyPress = (e) => {
       <h1 class="question-type">{{ currentType }}</h1>
       <p class="explanation">{{ currentExplanation }}</p>
       <div class="question-container">
-        <p class="question">{{ currentQuestion.question }}</p>
+        <QuestionDisplay :question="currentQuestion.text" />
       </div>
     </div>
     <router-link to="/" class="home-link">
@@ -151,16 +152,6 @@ const handleKeyPress = (e) => {
   text-align: center;
   z-index: 100;
   padding: 0.75rem 1.5rem;
-}
-
-.question {
-  font-family: 'Kaph', sans-serif;
-  font-size: 2rem;
-  transition: transform 0.3s ease-in-out;
-  text-shadow: 1px 1px 2px rgba(0,0,0,0.7), 
-                3px 3px 6px rgba(0,0,0,0.4), 
-                5px 5px 10px rgba(0,0,0,0.2);
-  padding: 0 1rem;
 }
 
 .picnic-view {
