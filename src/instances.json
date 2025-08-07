@@ -1,5 +1,15 @@
 [
   {
+    "name": "Stockholm",
+    "path": "/stockholm",
+    "colorScheme": {
+      "background": "#005293",
+      "text": "#FECB00",
+      "chipBackground": "#FECB00",
+      "chipText": "#005293"
+    }
+  },
+  {
     "name": "Baltimore",
     "path": "/baltimore",
     "colorScheme": {
