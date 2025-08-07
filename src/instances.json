@@ -1,15 +1,5 @@
 [
   {
-    "name": "Stockholm",
-    "path": "/stockholm",
-    "colorScheme": {
-      "background": "#005293",
-      "text": "#FECB00",
-      "chipBackground": "#FECB00",
-      "chipText": "#005293"
-    }
-  },
-  {
     "name": "Baltimore",
     "path": "/baltimore",
     "colorScheme": {
@@ -223,10 +213,10 @@
     "name": "Stockholm",
     "path": "/stockholm",
     "colorScheme": {
-      "background": "#F0F8FF",
-      "text": "#000000",
-      "chipBackground": "#4682B4",
-      "chipText": "#FFFFFF"
+      "background": "#005293",
+      "text": "#FECB00",
+      "chipBackground": "#FECB00",
+      "chipText": "#005293"
     }
   },
   {
