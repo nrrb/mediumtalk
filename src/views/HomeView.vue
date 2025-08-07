@@ -23,10 +23,20 @@ onMounted(() => {
   };
 });
 
+const stripeThickness = 10;
 const getInstanceStyle = (instance) => {
   const { background, text, chipBackground, chipText } = instance.colorScheme;
   return {
-    backgroundImage: `linear-gradient(to right, ${background}, ${text}, ${chipBackground}, ${chipText})`,
+    background: `repeating-linear-gradient(45deg,
+    ${background},
+    ${background} ${stripeThickness}rem,
+    ${text} ${stripeThickness}rem,
+    ${text} ${stripeThickness * 2}rem,
+    ${chipBackground} ${stripeThickness * 2}rem,
+    ${chipBackground} ${stripeThickness * 3}rem,
+    ${chipText} ${stripeThickness * 3}rem,
+    ${chipText} ${stripeThickness * 4}rem
+    )`,
   };
 };
 
@@ -119,30 +129,48 @@ h1 {
     font-style: italic;
 }
 .instance-list {
-    text-align: center;
-
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem 1rem 0;
 }
+
 .instance-list ul {
-  padding-top: 2rem;
   list-style: none;
   padding: 0;
+  margin: 0;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 1rem;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: 100%;
 }
+
+.instance-list li {
+  width: 100%;
+  margin: 0;
+}
+
 .instance-link {
   display: block;
-  padding: 1rem 1.5rem;
-  border-radius: 0.5rem;
+  padding: 0.5rem 1.5rem;
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+  width: 100%;
   color: white;
   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
   font-weight: bold;
   text-align: center;
-  transition: transform 0.2s ease;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  border-radius: 0;
+  background: linear-gradient(90deg, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.2) 100%);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
+
 .instance-link:hover {
-  transform: scale(1.05);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  background: linear-gradient(90deg, rgba(0,0,0,0.15) 0%, rgba(0,0,0,0.25) 100%);
 }
 .attribution {
     margin-top: 4rem;
