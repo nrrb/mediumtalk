@@ -2,6 +2,7 @@
 import { ref, onMounted } from 'vue';
 import questions from '@/questions.json';
 import instances from '@/instances.json';
+import QuestionDisplay from '@/components/QuestionDisplay.vue';
 
 const isPortraitExpanded = ref(false);
 const portraitRef = ref(null);
@@ -53,12 +54,23 @@ onMounted(() => {
 <template>
   <div class="home-view">
     <h1>Medium Talk</h1>
+    <h2>Get to know someone.</h2>
     <div v-if="randomQuestion" class="random-question-sample">
-      <p>"{{ randomQuestion.text }}"</p>
+      <QuestionDisplay :question="randomQuestion" />
     </div>
-    <div class="description">
-      <p>Get to know someone.</p>
+    <div class="instance-list">
+      <router-link to="/picnic" class="instance-link" :style="getInstanceStyle({
+        name: 'No-Small-Talk Picnic',
+        path: '/picnic',
+        colorScheme: {
+          background: '#FCBC45',
+          text: '#000000',
+          chipBackground: '#C51E30',
+          chipText: '#FFFFFF'
+        }
+      })">No-Small-Talk Picnic</router-link>
     </div>
+    <h2 class="instance-list-title">Cities:</h2>
     <div class="instance-list">
       <ul class="instance-list">
         <li v-for="instance in instances" :key="instance.path">
@@ -91,8 +103,17 @@ onMounted(() => {
 h1 {
     font-family: 'Kaph', sans-serif;
     font-size: 4rem;
-    text-shadow: 1px 1px 2px rgba(0,0,0,0.7), 3px 3px 6px rgba(0,0,0,0.4), 
-    5px 5px 10px rgba(0,0,0,0.2);
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.7), 3px 3px 6px rgba(0,0,0,0.4);
+}
+h2 {
+    font-family: 'Kaph', sans-serif;
+    font-size: 1.5rem;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.7);
+}
+.instance-list-title {
+    font-family: 'Kaph', sans-serif;
+    font-size: 1.5rem;
+    margin-top: 4rem;
 }
 .home-view {
   padding: 2rem;
