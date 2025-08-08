@@ -119,7 +119,9 @@ const chipStyle = computed(() => {
 <template>
   <div v-if="currentInstance && currentQuestion" class="instance-view" ref="el">
     <LevelIndicator :level="currentQuestion.level" :instance-styles="chipStyle" />
-    <QuestionDisplay :question="currentQuestion.text" />
+    <div class="question-container">
+      <QuestionDisplay :question="currentQuestion.text" />
+    </div>
     <router-link to="/" class="home-link">
       leave {{ currentInstance.name }}
     </router-link>
